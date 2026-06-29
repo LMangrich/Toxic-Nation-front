@@ -13,19 +13,19 @@ const barcodeHorizontal = Array(3).fill(null);
 
 export const DiscoverMapSection = () => {
   return (
-    <section className="px-16 py-9"> 
+    <section className="px-2 sm:px-16 py-6 sm:py-9">
       <div className="mx-auto text-center">
           <div className="relative max-w-[1200px] max-h-[870px] mx-auto">
               <div className="absolute top-5 left-0 w-full overflow-hidden z-20 pointer-events-none">
                 <div className="animate-scroll-left">
-                  <h2 className="text-[64px] font-nemesys text-white whitespace-nowrap inline-block" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
+                  <h2 className="text-[20px] sm:text-[64px] font-nemesys text-white whitespace-nowrap inline-block" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
                     Discover the hidden secrets
                   </h2>
                 </div>
               </div>
               <div className="absolute top-5 left-0 w-full overflow-hidden z-20 pointer-events-none">
                 <div className="animate-scroll-left-delayed">
-                  <h2 className="text-[80px] text-white" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
+                  <h2 className="text-[20px] sm:text-[80px] text-white" style={{ filter: 'drop-shadow(0px 0px 7.72px rgba(89, 193, 53, 0.4))' }}>
                     Discover the hidden secrets
                   </h2>
                 </div>
@@ -56,41 +56,40 @@ export const DiscoverMapSection = () => {
             </div>
 
             <MapIconWrapper label="Character Vault" className="absolute top-[18%] left-[15%]">
-              <CardMapProfileIcon />
-            </MapIconWrapper> 
-              
+              <CardMapProfileIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
+            </MapIconWrapper>
+
             <MapIconWrapper label="Welcome Hall" className="absolute top-[22%] left-[43%]">
-              <CardMapWavingHandIcon className="text-soft-toxic-green" />
+              <CardMapWavingHandIcon className="text-soft-toxic-green w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
 
             <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute top-[22%] left-[61.5%]">
-              <CardMapWavingHandIcon />
+              <CardMapWavingHandIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
-            
+
             <MapIconWrapper label="Lore Chamber" className="absolute top-[18.5%] left-[72%]">
-              <CardMapPaperIcon />
+              <CardMapPaperIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
 
             <MapIconWrapper label="Fellowship Hall" className="absolute top-[25%] right-[10%]">
-              <CardMapChatIcon />
+              <CardMapChatIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
 
             <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute top-[37%] left-[30%]">
-              <CardMapWavingHandIcon />
+              <CardMapWavingHandIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
-            
+
             <MapIconWrapper label="Environment Gallery" className="absolute bottom-[35%] left-[32%]">
-              <CardMapImagesIcon />
+              <CardMapImagesIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
 
             <MapIconWrapper label="Environment Gallery" variant="secondary" className="absolute bottom-[25%] right-[26%]">
-              <CardMapWavingHandIcon />
+              <CardMapWavingHandIcon className="w-5 h-5 sm:w-auto sm:h-auto" />
             </MapIconWrapper>
 
             {/* Legend Box */}
-            
-
-            <div className="absolute bottom-[10%] right-[8%] bg-[#24523B66]/40 border-2 border-toxic-green p-4 shadow-[4px_4px_4px_0px_#91FF2240,-2px_-2px_4px_0px_#91FF2240]">              <div className="absolute right-0 top-0 -translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green" />
+            <div className="absolute bottom-[10%] right-[8%] bg-[#24523B66]/40 border-2 border-toxic-green p-4 shadow-[4px_4px_4px_0px_#91FF2240,-2px_-2px_4px_0px_#91FF2240] scale-[0.4] origin-bottom-right sm:scale-[0.6] md:scale-100">              
+            <div className="absolute right-0 top-0 -translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green" />
               <div className="absolute left-0 top-0 -translate-y-2 -translate-x-1.5 h-4 w-4 bg-toxic-green" />
               <div className="absolute right-0 bottom-0 translate-y-2 translate-x-1.5 h-4 w-4 bg-toxic-green" />
               <div className="absolute left-0 bottom-0 translate-y-2 -translate-x-1.5 h-4 w-4 bg-toxic-green" />
@@ -113,7 +112,7 @@ export const DiscoverMapSection = () => {
             </div>
 
             {/* Bottom Left Barcode */}
-            <div className="absolute bottom-[2.8%] left-[2.8%]">
+            <div className="absolute bottom-[2.8%] left-[2.8%] scale-[0.5] origin-bottom-left sm:scale-100">
               <div className="flex gap-1">
                 <div className="flex flex-row gap-1.5">
                   {barcodeVertical.map((_, i) => (

@@ -54,14 +54,14 @@ export const MapIconWrapper = ({
       <div className={`absolute inset-0 -top-1 -left-1
           border-2 ${t.outerBorder} ${t.outerShadow}
           opacity-0 pointer-events-none
-          p-9
+          p-5 sm:p-9
           group-hover:opacity-100
           ${t.hoverBg}
           group-hover:animate-box-bounce
       `} />
 
       <div className={`relative flex flex-col items-center justify-start
-          ${t.innerBg} border-2 ${t.innerBorder} ${t.hoverBorder} p-8 
+          ${t.innerBg} border-2 ${t.innerBorder} ${t.hoverBorder} p-4 sm:p-8
           ${t.innerShadow}
           ${isHovering 
               ? 'animate-inner-box-bounce' 

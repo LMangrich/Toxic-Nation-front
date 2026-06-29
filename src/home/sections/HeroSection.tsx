@@ -5,7 +5,7 @@ import { PlayIcon } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative px-16 py-12">
+    <section className="relative px-4 sm:px-16 py-8 sm:py-12">
         <div className="max-w-6xl mx-auto absolute inset-0 z-0 opacity-20"
           style={{
             backgroundImage: `url(${background_image})`,
@@ -15,7 +15,7 @@ const HeroSection = () => {
           }}
         />
         
-        <div className='relative z-10 max-w-6xl mx-auto grid grid-cols-[1.3fr_1fr] gap-12 w-full items-start'>
+        <div className='relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-8 md:gap-12 w-full items-start'>
             <div className='w-full'>
                 <h2 className="max-w-md text-24 md:text-48 font-cabin font-semibold leading-tight mb-4">
                     Where light cannot reach, hope must carve its own path.
@@ -25,7 +25,7 @@ const HeroSection = () => {
                     An interactive artbook experience - Explore a dystopian narrative through concept art, stories, and secrets about the game.
                 </p>
 
-                <div className="w-full flex flex-row gap-4 items-start">
+                <div className="w-full flex flex-row flex-wrap gap-4 items-start">
                     <Button variant="primary">
                     Non-Linear Exploration
                     </Button>
@@ -39,7 +39,7 @@ const HeroSection = () => {
             </div>
 
             <div className="w-full">
-              <div className="relative max-w-[381px] h-[284px] overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+              <div className="relative w-full max-w-[381px] h-[220px] sm:h-[284px] overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <img 
                   src={video} 
                   alt="Toxic Nation Video Thumbnail" 
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto border-b border-toxic-green">
-            <h1 className="mt-20 text-[144px] text-left text-toxic-green font-hitobito font-semibold mb-4">
+            <h1 className="mt-8 md:mt-20 text-[52px] sm:text-[96px] md:text-[144px] text-left text-toxic-green font-hitobito font-semibold mb-4">
                 Toxic Nation
             </h1>
 

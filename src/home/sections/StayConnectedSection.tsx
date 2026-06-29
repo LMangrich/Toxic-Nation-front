@@ -4,9 +4,9 @@ import { MicrosoftIcon, SteamIcon } from '../../components/Icons/Icons';
 
 export const StayConnectedSection = () => {
   return (
-    <section className="py-9 max-w-7xl mx-auto">
+    <section className="py-9 max-w-7xl mx-auto px-4 sm:px-8">
         <div className='flex flex-col items-center mx-auto mb-12'>
-          <h2 className="text-[64px] text-center md:text-[64px] font-nemesys text-white mb-5">
+          <h2 className="text-[36px] md:text-[64px] text-center font-nemesys text-white mb-5">
             STAY CONNECTED
           </h2>
 
@@ -43,9 +43,9 @@ export const StayConnectedSection = () => {
                 <SteamIcon className='h-8 w-8 opacity-30'/>
               </div>
 
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <div className='flex flex-col gap-8'>
-              <div className="flex-shrink-0 relative flex items-end w-[193px] h-[69px] bg-black overflow-hidden">
+              <div className="relative flex items-end w-full sm:w-[193px] h-[69px] bg-black overflow-hidden">
                 <img 
                   src={pixel_art} 
                   alt="Game screenshot"
@@ -71,8 +71,8 @@ export const StayConnectedSection = () => {
             </div>      
           </div>
 
-          <div className="flex items-center justify-end -translate-y-8 -translate-x-3.5 relative z-50">
-            <div className="flex items-center gap-3 text-22 font-cabin text-white bg-[#1A7A3E] px-2.5 py-1.5">
+          <div className="flex items-center justify-end sm:-translate-y-8 sm:-translate-x-3.5 mt-3 sm:mt-0 relative z-50">
+            <div className="flex items-center gap-3 text-16 sm:text-22 font-cabin text-white bg-[#1A7A3E] px-2.5 py-1.5 w-full sm:w-auto justify-between sm:justify-start">
               <span>Coming soon</span>
               <button className="bg-toxic-green text-white text-12 px-6 py-2.5 shadow-[0_4px_4px_0_rgba(0,0,0,0)]">
                 + Wishlist on Steam

@@ -3,7 +3,7 @@ import { TwitterIcon, InstagramIcon, EmailIcon } from '../Icons/Icons';
 export const Footer = () => {
   return (
     <footer className="py-[49px]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-16">
         <div className="max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-14 mb-12">
           <div>
             <h2 className="text-32 font-nemesys mb-4">

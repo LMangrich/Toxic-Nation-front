@@ -34,10 +34,10 @@ const teamMembers = [
 
 export const CreativeTeamSection = () => {
   return (
-    <section className="px-16">
+    <section className="px-4 sm:px-16">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-[64px] font-nemesys text-white mb-6">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-[36px] md:text-[64px] font-nemesys text-white mb-6">
             CREATIVE TEAM
           </h2>
           <p className="text-18 font-semibold font-cabin text-white">
@@ -45,7 +45,7 @@ export const CreativeTeamSection = () => {
           </p>
         </div>
 
-        <div className="mx-auto max-w-sm md:max-w-lg lg:max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[28px] mb-[92px]">
+        <div className="mx-auto max-w-xs md:max-w-lg lg:max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[28px] mb-[46px] md:mb-[92px]">
           {teamMembers.map((member, index) => (
             <div
               key={index}
